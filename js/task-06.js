@@ -10,13 +10,6 @@ const validLength = input.dataset.length;
 console.log(validLength);
 
 
-
-
-
-
-
-
-
 function onInputFocus() {
 console.log('инпут получил фокус');
 }

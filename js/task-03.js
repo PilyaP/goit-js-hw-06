@@ -21,3 +21,4 @@ const generateGalleryItem = ({ url, alt }) =>
 
 const galleryItems = images.map(generateGalleryItem).join('');
 gallery.insertAdjacentHTML('beforeend', galleryItems);
+

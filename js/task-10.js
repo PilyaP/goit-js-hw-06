@@ -47,3 +47,4 @@ createBoxes(inputRef.value);
 });
 
 destroyBtnRef.addEventListener('click', destroyBoxes);
+
