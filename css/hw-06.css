@@ -1,0 +1,126 @@
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    color: brown;
+}
+a:focus,
+:active, :hover {
+    color: green;
+}
+
+
+
+
+
+.hw-ul {
+    font-size: 60px;
+    text-decoration: none;
+    list-style-type: none;
+    
+}
+
+
+
+
+
+
+button {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+.gallery{
+    display: flex;
+    gap: 30px;
+}
+.gallery img {
+    max-width: 100%;
+    height: auto;
+} 
+
+#validation-input {
+    border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+    border-color: #4caf50;
+}
+
+#validation-input.invalid {
+    border-color: #f44336;
+}
+
+body {
+    
+        background-size: 400% 400%;
+        animation: gradientBG 4s ease infinite;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+          @keyframes gradientBG {
+              0% {
+                  background-position: 0% 50%;
+              }
+    
+              50% {
+                  background-position: 100% 50%;
+              }
+    
+              100% {
+                  background-position: 0% 50%;
+              }
+          }
+.hw-ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 50px 0 0 0;
+}
+
+.hw-ul li {
+    margin: 10px;
+}
+
+.hw-ul li a {
+    display: block;
+    padding: 10px 20px;
+    background-color: #d7afaf;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.hw-ul li a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
