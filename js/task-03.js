@@ -12,13 +12,9 @@ const images = [
     alt: "Group of Horses Running",
   },
 ];
-// Отримуємо посилання на елемент галереї з HTML
 const gallery = document.querySelector('.gallery');
-
-// Генеруємо HTML-код для кожного зображення в масиві та додаємо його до розмітки
-const generateGalleryItem = ({ url, alt }) =>
+const galleryItem = ({ url, alt }) =>
   `<li><img src="${url}" alt="${alt}"></li>`;
-
-const galleryItems = images.map(generateGalleryItem).join('');
+const galleryItems = images.map(galleryItem).join('');
 gallery.insertAdjacentHTML('beforeend', galleryItems);
 
