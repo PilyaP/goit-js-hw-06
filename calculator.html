@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Инженерный калькулятор</title>
+    <style>
+      #calculator {
+        width: 300px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid black;
+        text-align: center;
+      }
+      input[type='button'] {
+        width: 60px;
+        height: 30px;
+        margin: 5px;
+        font-size: 16px;
+      }
+      input[type='text'] {
+        width: 90%;
+        height: 30px;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="calculator">
+      <h1>Инженерный калькулятор</h1>
+      <input type="text" id="display" readonly />
+
+      <br />
+      <input type="button" value="sin" onclick="calculate('sin')" />
+      <input type="button" value="cos" onclick="calculate('cos')" />
+      <input type="button" value="tan" onclick="calculate('tan')" />
+      <input type="button" value="sqrt" onclick="calculate('sqrt')" />
+      <br />
+      <input type="button" value="7" onclick="addToDisplay('7')" />
+      <input type="button" value="8" onclick="addToDisplay('8')" />
+      <input type="button" value="9" onclick="addToDisplay('9')" />
+      <input type="button" value="/" onclick="addToDisplay('/')" />
+      <br />
+      <input type="button" value="4" onclick="addToDisplay('4')" />
+      <input type="button" value="5" onclick="addToDisplay('5')" />
+      <input type="button" value="6" onclick="addToDisplay('6')" />
+      <input type="button" value="*" onclick="addToDisplay('*')" />
+      <br />
+      <input type="button" value="1" onclick="addToDisplay('1')" />
+      <input type="button" value="2" onclick="addToDisplay('2')" />
+      <input type="button" value="3" onclick="addToDisplay('3')" />
+      <input type="button" value="-" onclick="addToDisplay('-')" />
+      <br />
+      <input type="button" value="0" onclick="addToDisplay('0')" />
+      <input type="button" value="." onclick="addToDisplay('.')" />
+      <input type="button" value="=" onclick="calculate('equals')" />
+      <input type="button" value="+" onclick="addToDisplay('+')" />
+      <br />
+      <input type="button" value="C" onclick="clearDisplay()" />
+    </div>
+    <script src="/js/calculator.js"></script>
+  </body>
+</html>
